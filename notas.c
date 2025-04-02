@@ -10,19 +10,19 @@ int main()
 
     if(media>8)
     {
-        printf("Aprovado com Distinção.\n com a nota %f", media);
+        printf("Aprovado com Distinção.");
     }
     else if(media>=6)
     {
-        printf("Aprovado Direto. \n com a nota %f", media);
+        printf("Aprovado Direto.");
     }
     else if(media>=4)
     {
-        printf("Vai para Final. \n com a nota %f", media);
+        printf("Vai para Final.");
     }
     else
     {
-        printf("Reprovado direto. \n com a nota %f", media);
+        printf("Reprovado direto.");
     }
     return 0;
 }
