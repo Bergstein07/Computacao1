@@ -12,7 +12,7 @@ int main()
     }
     else
     {
-        printf("Quantidade de Minutos: %.2f\n", hora*60 + min + (seg/100));
+        printf("Quantidade de Minutos: %.2f\n", hora*60 + min + (seg/60));
     }
     return 0;
 }
