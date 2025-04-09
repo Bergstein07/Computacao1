@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<locale.h>
+int main()
+{
+    float A;
+    printf("Digite o Consumo de agua: ");
+    scanf("%f", &A);
+
+    if (A < 10)
+    {
+        printf("O Valor é 7 \n");
+    }
+    else if (A < 30)
+    {
+        printf("%f", (30-A)*1+(7));
+    }
+    else if (A < 100)
+    {
+        printf("%f", (100-A)*2+(7+20));
+    }
+    else if (A > 100)
+    {
+        printf("%.2f", (A-100)*5+(7+20+140));
+    }
+
+    return 0;
+}
