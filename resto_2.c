@@ -2,7 +2,7 @@
 #include<locale.h>
 int main()
 {
-    int n, i = 1, r2;
+    int n, i = 1;
     printf("Digite um numero: ");
     scanf("%d", &n );
 
