@@ -6,7 +6,7 @@ int main()
     int n, maior;
     printf("Digite um numero: ");
     scanf("%d", &n);
-    while (n>0)
+    for (;n>0;)
     {
         printf("Digite um numero: ");
         scanf("%d", &n);
