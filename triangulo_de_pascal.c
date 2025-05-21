@@ -5,7 +5,7 @@ int main()
 {
     int n,**N,i,j;
 
-    printf("Quantas linhas do Triangulo de Pascal ce queh? ");
+    printf("Digite a quantidade de linhas do Triangulo de Pascal: ");
     scanf("%d", &n);
 
     N = (int **) malloc(n*sizeof(int *));
