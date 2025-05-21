@@ -19,7 +19,7 @@ int main()
     srand(time(NULL));
     for(i=0; i<3; i++)
     {
-        valores[i]=rand()%10;
+        valores[i]=rand()%100;
     }
     for(i=0; i<3; i++)
     {
