@@ -1,10 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
-int matriz_original[5][5];
-
-void geraMatriz()
+void geraMatriz(int matriz[5][5])
 {
     int l,c;
     srand(time(NULL));
@@ -12,8 +9,8 @@ void geraMatriz()
     {
         for(c=0; c<5; c++)
         {
-            matriz_original[l][c]=rand()%100;
-            printf("%d\t",matriz_original[l][c]);
+            matriz[l][c]=rand()%100;
+            printf("%d\t",matriz[l][c]);
         }
         printf("\n");
     }
@@ -23,15 +20,14 @@ void geraDez()
     int num, cont=0, l,c, qtd=0;
     for(cont=0; cont<10; cont++)
     {
-        num=rand()%100;
-        printf("%d",num);
+        printf("%d",rand()%100);
     }
 }
-int main()
-{
-    printf("\n\t Matriz original:\n\n");
-    geraMatriz();
+int main() {
+    int matriz_original[5][5];
     int matriz_transposta[5][5];
+    printf("\n\t Matriz original:\n\n");
+    geraMatriz(matriz_original);
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -49,3 +45,4 @@ int main()
         printf("\n");
     }
 }
+
