@@ -9,19 +9,16 @@ int main()
     for (int i = 0; i < 3; i++) {
         printf("Digite o %dº nome:\n", i + 1);
         fgets(nomes[i], 101, stdin);
-        nomes[i][strcspn(nomes[i], "\n")] = '\0';
     }
 
     while(1)
     {
         printf("Digite o nome para saber se já foi colocado:\n");
         fgets(nomenovo, 101, stdin);
-        nomenovo[strcspn(nomenovo, "\n")] = '\0';
 
         for (int i = 0; i < 3; i++) {
             if (strcmp(nomenovo, nomes[i]) == 0) {
                 existe = 1;
-                break;
             }
         }
 
