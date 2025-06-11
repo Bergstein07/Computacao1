@@ -23,6 +23,7 @@ int main()
         }
 
         if (existe) {
+            printf("Ele esta entre os tres nome\n");
             printf("Programa finalizado");
             break;
         } else {
